@@ -1,0 +1,70 @@
+<header class="page-header inner">
+    <h4>订单更新</h4>
+    <p>这里显示客户最新的订单。</p>
+</header>
+
+<object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0> 
+	<embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0 pluginspage="install_lodop32.exe"></embed>
+</object> 
+
+<div ng-controller="indentCtrl">
+<div class="container">
+	<div class="row">
+        <div class="col-span-1">
+        </div>
+		<div class="col-span-8">
+			<table class="table table-condensed table-striped" id="cart">
+				<thead>
+					<tr>
+						<th>菜品名</th>
+						<th>数量</th>
+						<th>单价</th>
+                        <th>小计</th>
+					</tr>
+				</thead>
+                <tbody  ng-repeat="indent in data | filter:{restaurant:user.name,needPrint:true}">
+                    <td>
+                        <button class="btn disabled btn-small btn-warning btn-block">桌号：{{indent.tableNumber}}</button>
+                    </td>
+                    <td>
+                        <button class="btn disabled btn-small btn-info btn-block">总计：{{indent.total}}</button>
+                    </td>
+                    <td></td>
+                    <td><button class="btn btn-small btn-success" ng-click="submit(indent)">打印</button></td>
+					<tr class="success" ng-repeat="dish in indent.dishes">
+						<td>{{dish.name}}</td>
+                        <td>{{dish.quantity}}</td>
+                        <td>{{dish.price}}</td>
+                        <td>{{dish.total}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</div>
+<!--
+<div ng-controller="indentCtrl">
+    <ul class="media-list">
+        <li class="media" ng-repeat="indent in data">
+          <div class="media-body" id="{{indent._id}}">
+            <header class="media-heading">
+                <h4>桌号：{{indent.tableNumber}}</a>
+                </h4>
+            </header>
+
+            <footer>
+                <ul class="list-inline text-muted">
+                    <li ng-hide="article.date==article.updateTime">{{article.updateTime | formatDate}}更新</li>
+                    <li>{{article.comments}}条评论</li>
+                    <li ng-repeat="tag in article.tagsList">
+                        <a ng-href="{{'/'+tag._id}}" class="btn btn-mini">{{tag.tag}}</a>
+                    </li>
+                </ul>
+            </footer>
+          </div>
+        </li>
+    </ul>
+    <div class="pull-left" gen-pagination="pagination" ng-show="pagination"></div>
+</div>
+-->

@@ -1,0 +1,127 @@
+.simpleCart_shelfItem {
+	margin: 0 0 10px;
+	padding: 0 0 0 -10px;
+	float: left;
+	border: dotted 1px #cdcdcd;
+	font-size: .9em;
+	width: 100%;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffedecec',GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffedecec)";
+    zoom: 1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#edecec));
+	background: -moz-linear-gradient(top,#ffffff,#edecec) }
+ 
+.cart {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 560px;
+	border: solid 1px #cdcdcd;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffedecec',GradientType=0);
+     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffedecec)";
+    zoom: 1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#edecec));
+	background: -moz-linear-gradient(top,#ffffff,#edecec) }
+ 
+.cart_summary {
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	border: 0;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000',endColorstr='#ff6f6f6f',GradientType=0);
+     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff000000, endColorstr=#ff6f6f6f)";
+    zoom: 1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#000000),to(#6f6f6f));
+	background: -moz-linear-gradient(top,#000000,#6f6f6f);
+	width: 100% }
+ 
+	.cart_summary b {
+		float: left;
+		margin: 0;
+		padding: 5px 0 0;
+		font-family: diy,Helvetica,Verdana;
+		font-size: 1.7em;
+		color: #39f;
+		border: 0 }
+ 
+	.cart_summary>.gst {
+		margin: 0;
+		padding: 0 145px 5px 5px;
+		float: left;
+		line-height: 2em;
+		color: white;
+		font-weight: 400;
+		font-family: Helvetica,Verdana;
+		font-size: .7em }
+ 
+.total {
+	float: left;
+	padding: 0 0 0 5px;
+	margin: 0 5px 0 0;
+	color: #39f;
+	line-height: 1.5em }
+ 
+.simpleCart_finalTotal {
+	float: left;
+	padding: 0 5px;
+	font-weight: 700;
+	font-size: 1.2em;
+	color: white }
+ 
+.simpleCart_items {
+	padding: 0;
+	float: left;
+	text-align: center }
+ 
+div.cartHeaders div {
+	height: 20px;
+	float: left;
+	padding: 5px 0 0;
+	border-bottom: double grey;
+	border-top: solid 1px #19aaee;
+	font-weight: 700;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000',endColorstr='#ff6f6f6f',GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff000000, endColorstr=#ff6f6f6f)";
+    zoom: 1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#000000),to(#6f6f6f));
+	background: -moz-linear-gradient(top,#000000,#6f6f6f);
+	color: white }
+ 
+div.cartHeaders>div.itemName,div.itemContainer>div.itemName { width:233px;border-left: solid 1px gray }
+ 
+div.cartHeaders>div.itemPrice,div.itemContainer>div.itemPrice { width:60px;border-left: solid 1px gray }
+ 
+div.itemContainer>div.itemQuantity { width: 40px }
+ 
+div.cartHeaders>div.itemQuantity { width:70px;border-left: solid 1px gray }
+ 
+div.itemContainer>div.itemincrement {
+	width: 15px;
+	border-left: solid 1px gray;
+	font-size: 1.3em;
+	line-height: 1em }
+ 
+div.itemContainer>div.itemdecrement {
+	width: 15px;
+	font-size: 1.3em;
+	line-height: 1em }
+ 
+div.itemContainer>div.itemTotal,div.cartHeaders>div.itemTotal {
+	width: 70px;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray }
+ 
+div.itemContainer>div.itemColour,div.cartHeaders>div.itemColour { width:120px;border-right: solid 1px gray }
+ 
+div.itemContainer div {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeae7e7',GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffeae7e7)";
+    zoom: 1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#edecec));
+	background: -moz-linear-gradient(top,#ffffff,#eae7e7);
+	float: left;
+	border-bottom: solid 1px gray;
+	margin: 0;
+	padding: 0;
+	line-height: 1.3em }

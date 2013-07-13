@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-span-9">
+        <div class="panel" ng-include src="getTpl">
+        </div>
+    </div>
+    <div class="col-span-3 sidebar">
+        <div class="panel">
+            <ul class="nav nav-list text-center">
+                <li class="active" gen-tab-active="active">
+                    <a ng-click="setTpl('admin-index.html')"><i class="glyphicon glyphicon-chevron-left"></i> 网站信息 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-user.html')"><i class="glyphicon glyphicon-chevron-left"></i> 用户管理 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-tag.html')"><i class="glyphicon glyphicon-chevron-left"></i> 标签管理 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-article.html', 'article')"><i class="glyphicon glyphicon-chevron-left"></i> 文章管理 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-article.html', 'comment')"><i class="glyphicon glyphicon-chevron-left"></i> 评论管理 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-collection.html')"><i class="glyphicon glyphicon-chevron-left"></i> 合集管理 </a>
+                </li>
+                <li gen-tab-active="active">
+                    <a ng-click="setTpl('admin-message.html')"><i class="glyphicon glyphicon-chevron-left"></i> 消息管理 </a>
+                </li>
+                <li ng-show="global.isAdmin" gen-tab-active="active">
+                    <a ng-click="setTpl('admin-global.html')"><i class="glyphicon glyphicon-chevron-left"></i> 网站设置 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="panel-transparent inner">
+        <div class="page-header">
+        </div>
+        
+	    <div class="row">
+	    	<div class="col-span-4">
+                <form class="form-horizontal form-min" name="menu">
+	                <div class="control-group">
+                        <label class="control-label">桌位号：</label>
+                        <div class="controls">
+                            <input class="input-block-level" type="text" placeholder="请填写桌位号" 
+                                name="table_number" ng-model="table_number" required/>
+                        </div>
+                    </div>
+        		</form>
+	    	</div>
+            <div class="col-span-4">
+                <div class="control-group">
+                    <div class="controls">
+                        <button ng-click="submit()" class="btn btn-primary" ng-disabled="menu.$error.required">提  交</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+            </div>
+        </div>
+	</div>
+    <div class="row">
+        <span class="label label-success">菜单预览</span>
+	    <link rel="stylesheet" href="/static/css/simpleCart.css" type="text/css" media="screen" charset="utf-8"/>
+		<div class="simpleCart_items"></div>
+        <strong>总价: </strong><span class="simpleCart_total"></span>
+    </div>
+</div>
+

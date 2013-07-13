@@ -1,0 +1,309 @@
+/*!
+ * jsGen
+ *
+ * Copyright 2013 ZENSH
+ * https://github.com/zensh/jsgen
+ *
+ */
+ body {
+/*  font-size: 14px;
+  font-size: 1.4rem;*/
+  word-wrap: break-word;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAYCAYAAACIhL/AAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAACYUlEQVRIx42WYXLrIAyEBSb3v2OvkSDen7f0y0Y49UynDgYhrVYrtZ+fn/V4PGLOGRERa62IiGitvb231iIiIjOj9x561lp7X+89MnN/u64r1lqRmduGzmdmrLU+9tBG7z2GLtbh6llrbQf5+H5dquB0sd61npn7rILzgLV/aKMi0EME3RAdI8qOtlDQhUJHSDFwrdFGay0GI9fFfknl8LfnFNzdQ7B0ZtAB8eGEDh11jlZpYhr5V9kmt2lvcMENeOReHNzHb478af0vyA6mt0or14jc6eLqvPaLg6ziKjCeGadUni4k0Yksif8NvdN3nt9Fcl3X5h61Sr+pSSQytU+/SW79JkKUlznnm4PSYZerUZHXUWCqvUDudJKBZGaMMW5VgpKzOajUXNf1Idgu3lWXYdSy4YGJa6eiqFIrv8acM+ac8Xq9ynbl6MhpBuHSUfGaSHphsNu4QgwS3KXEHaTjXs3uCB1iMN/aKB3NzF+ZqdqZizFTQSNe4XSGRVS1sqo1EuXRe/+oUKFadRDXNBdxn1oqLSVyfocjO06OONycRIiKf6c88V1VrMx4/2eVv3FwzhnP57M8SEc8TZVznlpRQo55toSwayrtvKWYhNXhSvkpH3ekp8ZS4KvZs+L/fz96OY146Z8qrRJ2rv91xuQgy/tHNeY44St99JQzbacJR9+47u8e0HDBJNkrOakEmkZPE/paazcETtP6z16sPt1ai04dvOPEtzGsCqripTgvqar6L9f2NMMq8wnmrtq8q9C4pqQq5U4daibRHyQn+Xjqx3d9+jRtnzLknclRbK3FP3PnY9UL0WZ9AAAAAElFTkSuQmCC) repeat fixed;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*  font-size: 14px;*/
+}
+a {
+  color: #0066cc;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .form-horizontal.form-min .control-group > .control-label {
+    width: 80px;
+  }
+  .form-horizontal.form-min .control-group > .controls {
+    margin-left: 80px;
+  }
+  .input-block-level {
+    width: 100%;
+  }
+}
+[class*="col-span-"],
+[class*="col-small-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.nav img {
+    height: 40px;
+    margin: 5px 0;
+}
+.navbar {
+  padding: 0 15px;
+  border-radius: 0px;
+}
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+}
+
+.content,
+.tab-content {
+    padding-top: 10px;
+}
+.btn-group > .btn + .btn {
+  margin-left: 1px;
+}
+.list-inline > li {
+  padding: 2px;
+}
+.wmd-button-row
+{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 0px;
+    height: 20px;
+}
+.wmd-spacer
+{
+    width: 1px;
+    height: 20px;
+    margin-left: 14px;
+
+    position: absolute;
+    background-color: Silver;
+    display: inline-block;
+    list-style: none;
+}
+.wmd-button {
+    width: 20px;
+    height: 20px;
+    padding-left: 2px;
+    padding-right: 3px;
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+.wmd-button > span {
+    background-image: url("./img/wmd-buttons.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.wmd-spacer1
+{
+    left: 50px;
+}
+.wmd-spacer2
+{
+    left: 175px;
+}
+.wmd-spacer3
+{
+    left: 300px;
+}
+.wmd-prompt-background
+{
+    background-color: Black;
+}
+.wmd-prompt-dialog
+{
+    border: 1px solid #999999;
+    background-color: #F5F5F5;
+}
+.wmd-prompt-dialog > div {
+    font-size: 0.8em;
+    font-family: arial, helvetica, sans-serif;
+}
+.wmd-prompt-dialog > form > input[type="text"] {
+    border: 1px solid #999999;
+    color: black;
+}
+.wmd-prompt-dialog > form > input[type="button"]{
+    border: 1px solid #888888;
+    font-family: trebuchet MS, helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.wmd-preview {
+    background-color: #ffffff;
+    padding: 10px;
+    min-height: 100px;
+}
+#wmd-preview > p {
+    text-indent: 2em;
+}
+
+.panel,
+.panel-transparent {
+  padding: 10px 0;
+  margin: 15px 0 0 0;
+  border: none;
+}
+.panel {
+    background-color: #ffffff;
+}
+.panel-heading {
+  padding: 10px 15px 5px;
+  margin: -10px 0 15px;
+  font-size: 1.1em;
+}
+
+.thumbnail,
+.img-thumbnail {
+  border: none;
+}
+
+.panel .nav-tabs {
+    padding: 0 10px;
+}
+.full-container {
+    width: 100%;
+    max-width: 1600px;
+}
+.full-container .row {
+    width: 100%;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#refer-comments {
+    margin-top: 10px;
+}
+.nav-list > li:first-child {
+    border-top: none;
+}
+.nav-list > li {
+    border-top: 1px solid #ddd;
+}
+.nav-list > li.active > a,
+.nav-list > li.active > a:hover,
+.nav-list > li.active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.media {
+    padding: 0 10px;
+    margin: 0;
+}
+.media-list > li {
+    border-top: 1px solid #ddd;
+    padding: 5px 25px;
+}
+.media-list > li:hover {
+    background-color: #f6f6f6;
+}
+.media-object {
+    width: 80px;
+    height: 80px;
+}
+.sidebar .media-list > li {
+    padding: 5px;
+}
+.sidebar .media-list > li:hover {
+    background-color: #fff;
+}
+.media-list > li:first-child {
+    margin-top: 10px;
+    border-top: none;
+}
+.inner .media {
+    padding: 0;
+}
+#comments h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.page-footer {
+  padding-top: 10px;
+  margin: 40px 0 20px;
+  border-top: 1px solid #ddd;
+}
+#msg-modal {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 10px;
+    top: 20%;
+    bottom: auto;
+}
+.inner {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-hot {
+  color: red;
+}
+.sidebar .glyphicon {
+    float: left;
+}
+.parse-markdown > p {
+    text-indent: 2em;
+}
+#loading {
+    position: fixed;
+    top: 38%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+}
+#loading div {
+    width: 50%;
+    max-width: 315px;
+    margin: 0 auto;
+}
+.btn-toolbar {
+    margin-top: 10px;
+}
+.thumbnail h1,
+.thumbnail h2,
+.thumbnail h3 {
+    margin: 0;
+}
+.thumbnail .caption {
+    padding: 0;
+}
+.sina {
+    display: inline-block;
+    margin-left: 10px;
+}
+.modal {
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 800px) {
+	#cart-image { width:40%;}
+	#cart-content { width:60%;}
+}
+
+
+
+
+
+
+
+
+
+

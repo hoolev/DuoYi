@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="btn-large" style="max-width: 400px; margin: 0 auto 10px;">
+        <li ng-hide="global.isLogin"><a class="btn btn-large btn-block btn-success" href="/login" ng-click="clearUser()">登录</a></li>
+        <!--
+        <li ng-hide="global.isLogin"><a href="/register" ng-click="clearUser()">注册</a></li>
+        <li ng-hide="global.isLogin"><a href="/login" ng-click="clearUser()">登录</a></li>
+        <li ng-show="global.isLogin" class="hidden-phone"><img ng-src="{{global.user.avatar}}" class="img-rounded"/></li>
+        -->
+    </div>
+    <div class="btn-large" style="max-width: 400px; margin: 0 auto 10px;">
+        <li ng-hide="global.isLogin"><a class="btn btn-large btn-block btn-primary" href="/register" ng-click="clearUser()">注册</a></li>
+    </div>
+</div>

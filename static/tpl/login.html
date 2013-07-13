@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-span-4">
+        <div class="panel-transparent inner">
+            <div class="page-header">
+                <!--
+                <h4>用户登录</h4>
+               -->
+            </div>
+            <form class="form-horizontal form-min" name="login">
+                <div class="control-group">
+                    <label class="control-label">用户名：</label>
+                    <div class="controls">
+                        <input class="input-block-level" type="text" placeholder="name or Email or Uid"
+                        name="name" ng-model="logname" required/>
+                    </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">密码：</label>
+                  <div class="controls">
+                    <input class="input-block-level" type="password" placeholder="password"
+                    name="password" ng-model="logpwd" ng-minlength="6" ng-maxlength="20" required/>
+                    </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="logauto">自动登录
+                    </label>
+                    <button ng-click="submit()" class="btn btn-primary" ng-disabled="login.$error.required">登  录</button>
+                    <a ng-show="userReset" ng-href="{{'/reset/'+userReset}}" class="btn btn-warning">{{resetName}}</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-span-8">
+    </div>
+</div>
